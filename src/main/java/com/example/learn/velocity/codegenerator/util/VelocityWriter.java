@@ -13,13 +13,13 @@ import com.example.learn.velocity.codegenerator.beans.Field;
 
 public class VelocityWriter {
 	static String modelName = "User";
-    static String packageName = "com.companyname.projectname";
+    static String packageName = "com.example.learn.velocity.companyname.projectname";
  
     public static void main(String[] args) {
         VelocityEngine velocityEngine = new VelocityEngine();
         velocityEngine.init();
       
-        Template t = velocityEngine.getTemplate("vtemplates/class.vm");
+        Template t = velocityEngine.getTemplate("templates/class.vm");
        
         VelocityContext context = new VelocityContext();
   
